@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/codeAbinash/weather-react/static/css/main.f7aeb718.css",
+    "main.js": "/codeAbinash/weather-react/static/js/main.f50facda.js",
+    "static/js/787.74e6b0f6.chunk.js": "/codeAbinash/weather-react/static/js/787.74e6b0f6.chunk.js",
+    "index.html": "/codeAbinash/weather-react/index.html",
+    "main.f7aeb718.css.map": "/codeAbinash/weather-react/static/css/main.f7aeb718.css.map",
+    "main.f50facda.js.map": "/codeAbinash/weather-react/static/js/main.f50facda.js.map",
+    "787.74e6b0f6.chunk.js.map": "/codeAbinash/weather-react/static/js/787.74e6b0f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7aeb718.css",
+    "static/js/main.f50facda.js"
+  ]
+}
