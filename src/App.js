@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
+
+
+import { repoPath, REPO } from './js/deploy';
+
+import './styles/main.scss'
+
+//import screens
+import Start from './pages/Start'
+import SetLocation from './pages/SetLocation'
+import NotFound404 from './pages/404';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        
+        <Route path={ '/' + REPO } element={ <Start /> } />
+        <Route path={ repoPath('/home') } element={ <Start /> } />
+
+        <Route path={ repoPath('/set-location') } element={ <SetLocation /> } />
+
+        <Route path='*' element={<NotFound404/>}/>
+      </Routes>
+    </Router>
   );
 }
 
