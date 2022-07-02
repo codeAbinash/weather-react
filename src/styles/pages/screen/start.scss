@@ -1,0 +1,40 @@
+.startScreen {
+   padding: 25px 20px;
+   background-color: var(--bg);
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   // color: white;
+   align-items: center;
+   justify-content: space-between;
+   min-height: 100vh;
+   color: var(--text);
+   // border: 5px solid pink;
+
+   >h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 5%;
+   }
+
+   >p {
+      text-align: center;
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      margin: 0 7%;
+      font-weight: 500;
+      color: var(--text-2);
+   }
+
+   .mainImage {
+      margin-top: clamp(40px, 10vh, 100px);
+      width: 75%;
+   }
+
+   .bottomDiv {
+      p {
+         font-size: 0.7rem;
+         text-align: center;
+         margin-top: 15px;
+      }
+   }
+}

@@ -1,0 +1,23 @@
+.blueButtonComp{
+   width: 100%;
+   max-width: 500px;
+   display: block;
+   margin: 0 auto;
+   border: none;
+   outline: none;
+   padding: 1.2em;
+   border-radius: var(--border-radius);
+   font-size: 0.95rem;
+   font-weight: 500;
+   background-color: var(--accent);
+   color: white;
+   letter-spacing: 0.5px;
+   transition: 0.17s transform;
+   cursor: pointer;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-tap-highlight-color:transparent;
+   &:active{
+      transform: scale(0.98);
+   }
+}

@@ -16,17 +16,20 @@ import NotFound404 from './pages/404';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        
-        <Route path={ '/' + REPO } element={ <Start /> } />
-        <Route path={ repoPath('/home') } element={ <Start /> } />
+    <div className='container'>
 
-        <Route path={ repoPath('/set-location') } element={ <SetLocation /> } />
+      <Router>
+        <Routes>
 
-        <Route path='*' element={<NotFound404/>}/>
-      </Routes>
-    </Router>
+          <Route path={ '/' + REPO } element={ <Start /> } />
+          <Route path={ repoPath('/home') } element={ <Start /> } />
+
+          <Route path={ repoPath('/set-location') } element={ <SetLocation /> } />
+
+          <Route path='*' element={ <NotFound404 /> } />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
