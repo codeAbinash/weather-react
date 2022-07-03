@@ -3,7 +3,7 @@
    background-color: var(--bg);
    display: flex;
    flex-direction: column;
-   gap: 15px;
+   gap: 10px;
    // color: white;
    align-items: center;
    justify-content: space-between;
@@ -13,7 +13,7 @@
 
    >h1 {
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       padding: 5%;
    }
 
@@ -26,8 +26,8 @@
    }
 
    .mainImage {
-      margin-top: clamp(40px, 10vh, 100px);
-      width: 75%;
+      // margin-top: clamp(40px, 10vh, 120px);
+      width: 70%;
    }
 
    .bottomDiv {
