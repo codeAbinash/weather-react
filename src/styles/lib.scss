@@ -4,11 +4,14 @@
 .text-center{
    text-align: center;
 }
-.tap{
+.tap, .tap2{
    transition: 150ms linear transform;
 }
 .tap:active{
    transform: scale(0.9);
+}
+.tap2:active{
+   transform: scale(0.98);
 }
 
 a{

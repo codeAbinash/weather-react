@@ -2,22 +2,15 @@
 
 @import url('./common.scss');
 @import url('./var.scss');
-// @import url('./fonts/raleway.css');
-// @import url('./fonts/raleway.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
-/*font-family: 'Montserrat', sans-serif;*/
+
+@import url('./fonts/poppins.scss');
 
 @import url('../styles/pages/screen/screen.scss');
 
 
-*{  font-family: 'Montserrat', sans-serif;}
+*{  font-family: 'Poppins', sans-serif;}
 body {
-    min-height: 100vh;
-    
-    
-}
-p{
-    font-weight: 500;
+    min-height: 100vh;   
 }
 
 .container {

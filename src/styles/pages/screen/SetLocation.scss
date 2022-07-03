@@ -1,4 +1,117 @@
-.setLocation{
+.setLocation {
    min-height: inherit;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 20px;
 
+   >* {
+      flex: none;
+   }
+
+   .topDiv {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .searchDiv {
+         width: 100%;
+         padding: 0 15px 0px 15px;
+
+         input[type=text] {
+            width: 100%;
+            font-size: .83rem;
+            padding-block: 1.2em;
+            padding-inline: 1em;
+            padding-left: 2.8em;
+            border-radius: var(--border-radius);
+            border: none;
+            outline: none;
+            font-weight: 500;
+            border: 0.15em solid transparent;
+            transition: 300ms border-color, 150ms background-color;
+            background-color: var(--bg-input-field);
+            background-image: url('../../../images/icons/search.svg');
+            background-repeat: no-repeat;
+            background-position: 1em center;
+            background-size: 1.1em;
+
+            &:focus {
+               border-color: var(--accent);
+               // background-color: transparent;
+            }
+         }
+      }
+
+      >img {
+         width: 50%;
+         max-width: 150px;
+         margin: 0 auto;
+         margin-top: 10vh;
+      }
+
+      .cities{
+         min-height: 100px;
+         padding:0 15px;
+         p.countResult{
+            font-weight: 500;
+            color: var(--text-2);
+            font-size: 0.8rem;
+            margin: 10px 15px 15px 15px;
+         }
+
+         .city{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--bg-input-field);
+            padding:13px;
+            margin-block: 10px;
+            border-radius: 10px;
+            .left{
+               p{
+                  margin: 5px;
+               }
+               p.name{
+                  font-weight: 500;
+                  font-size: 0.9rem;
+                  span.smallText{
+                     font-size: 0.8em;
+                     color: var(--text-2);
+                  }
+               }
+            }
+            .right{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               >img{
+                  transform: rotate(180deg);
+                  width: 9px;
+                  margin-right: 10px;
+                  opacity: 0.7;
+               }
+            }
+         }
+
+      }
+   }
+
+   section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      // justify-content: center;
+      // align-items: center;
+
+      .bottomDiv {
+         padding: 20px;
+         text-align: center;
+
+         >p {
+            margin: 10px 20px;
+            font-size: 0.7rem;
+         }
+      }
+   }
 }

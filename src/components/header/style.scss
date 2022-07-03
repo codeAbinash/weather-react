@@ -3,7 +3,7 @@ header.headerComp {
    align-items: center;
    min-height: var(--header-height);
    justify-content: space-between;
-   border-bottom: 1px solid #ddd;
+   // border-bottom: 1px solid #ddd;
    padding-inline-end: 5px;
 
    .moreDiv,
@@ -22,7 +22,7 @@ header.headerComp {
    }
 
    p {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 0.9rem;
    }
 }
